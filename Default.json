@@ -413,9 +413,9 @@
     "Name": "Plex",
     "Url": "https://github.com/plexinc",
     "Image": "",
-    "Genre": "Media Server",
+    "Genre": "Media Server, Media",
     "Type": "App",
-    "Platform": "Multi-platform",
+    "Platform": " ",
     "Desc": " ",
     "Emulator Platforms": "None"
   },
