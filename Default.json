@@ -192,7 +192,7 @@
   {
     "Name": "Snes9x",
     "Url": "https://github.com/snes9xgit/snes9x/releases",
-    "Image": "https://github.com/snes9xgit/snes9x/blob/master/win32/snes9x.ico?raw=true",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/snes9x/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux, macOS)",
