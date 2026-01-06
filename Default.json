@@ -33,7 +33,7 @@
     "Genre": "Emulator",
     "Type": "Software",
     "Platform": "PC (Windows)",
-    "Emulator Platforms": "GameCube, Wii"
+    "Emulator Platforms": "Nintendo - GameCube,Nintendo - Wii"
   },
   {
     "Name": "Xenia",
@@ -42,7 +42,7 @@
     "Genre": "Emulator",
     "Type": "Software",
     "Platform": "PC (Windows)",
-    "Emulator Platforms": "Xbox 360"
+    "Emulator Platforms": "Microsoft - Xbox 360"
   },
   {
     "Name": "Xenia Canary",
@@ -51,7 +51,7 @@
     "Genre": "Emulator",
     "Type": "Software",
     "Platform": "PC (Windows)",
-    "Emulator Platforms": "Xbox 360"
+    "Emulator Platforms": "Microsoft - Xbox 360"
   },
   {
     "Name": "Xemu",
@@ -60,6 +60,6 @@
     "Genre": "Emulator",
     "Type": "Software",
     "Platform": "PC (Windows)",
-    "Emulator Platforms": "Original Xbox"
+    "Emulator Platforms": "Microsoft - Xbox"
   }
 ]
