@@ -222,7 +222,7 @@
   {
     "Name": "DuckStation",
     "Url": "https://github.com/stenzek/duckstation/releases",
-    "Image": "https://github.com/stenzek/duckstation/blob/master/duckstation-qt/resources/duckstation.png?raw=true",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/DuckStation/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux, macOS)",
@@ -282,7 +282,7 @@
   {
     "Name": "BizHawk",
     "Url": "https://github.com/TASVideos/BizHawk/releases",
-    "Image": "https://github.com/TASVideos/BizHawk/blob/master/Assets/bizhawk.ico?raw=true",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/BizHawk/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
