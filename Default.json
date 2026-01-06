@@ -182,7 +182,7 @@
   {
     "Name": "mGBA",
     "Url": "https://github.com/mgba-emu/mgba/releases",
-    "Image": "https://github.com/mgba-emu/mgba/blob/master/res/icon.png?raw=true",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/mgba/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "Multi-platform",
