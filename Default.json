@@ -172,7 +172,7 @@
   {
     "Name": "Citra",
     "Url": "https://github.com/citra-emu/citra/releases",
-    "Image": "https://github.com/citra-emu/citra/blob/master/dist/qt/assets/citra.png?raw=true",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Citra%203DS/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux, macOS)",
