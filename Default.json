@@ -32,7 +32,7 @@
   {
     "Name": "Dolphin",
     "Url": "https://github.com/dolphin-emu/dolphin/releases",
-    "Image": "https://example.com/dolphin.png",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Dolphin%20Emulator/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
