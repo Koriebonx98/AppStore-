@@ -168,5 +168,215 @@
     "Platform": "PC (Windows)",
     "Desc": " ",
     "Emulator Platforms": "None"
+  },
+  {
+    "Name": "Citra",
+    "Url": "https://github.com/citra-emu/citra/releases",
+    "Image": "https://github.com/citra-emu/citra/blob/master/dist/qt/assets/citra.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux, macOS)",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - 3DS"
+  },
+  {
+    "Name": "mGBA",
+    "Url": "https://github.com/mgba-emu/mgba/releases",
+    "Image": "https://github.com/mgba-emu/mgba/blob/master/res/icon.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - Game Boy Advance, Game Boy, Game Boy Color"
+  },
+  {
+    "Name": "Snes9x",
+    "Url": "https://github.com/snes9xgit/snes9x/releases",
+    "Image": "https://github.com/snes9xgit/snes9x/blob/master/win32/snes9x.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux, macOS)",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - Super Nintendo"
+  },
+  {
+    "Name": "MAME",
+    "Url": "https://github.com/mamedev/mame/releases",
+    "Image": "https://github.com/mamedev/mame/blob/master/artwork/logo.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Arcade, Various"
+  },
+  {
+    "Name": "PCSX2",
+    "Url": "https://github.com/PCSX2/pcsx2/releases",
+    "Image": "https://github.com/PCSX2/pcsx2/blob/master/pcsx2/Resources/pcsx2.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux, macOS)",
+    "Desc": " ",
+    "Emulator Platforms": "Sony - PlayStation 2"
+  },
+  {
+    "Name": "DuckStation",
+    "Url": "https://github.com/stenzek/duckstation/releases",
+    "Image": "https://github.com/stenzek/duckstation/blob/master/duckstation-qt/resources/duckstation.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux, macOS)",
+    "Desc": " ",
+    "Emulator Platforms": "Sony - PlayStation 1"
+  },
+  {
+    "Name": "DeSmuME",
+    "Url": "https://github.com/TASEmulators/desmume/releases",
+    "Image": "https://github.com/TASEmulators/desmume/blob/master/desmume/src/frontend/windows/res/desmume.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, macOS, Linux)",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - DS"
+  },
+  {
+    "Name": "melonDS",
+    "Url": "https://github.com/melonDS-emu/melonDS/releases",
+    "Image": "https://github.com/melonDS-emu/melonDS/blob/master/icon.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux, macOS)",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - DS"
+  },
+  {
+    "Name": "OpenEmu",
+    "Url": "https://github.com/OpenEmu/OpenEmu/releases",
+    "Image": "https://github.com/OpenEmu/OpenEmu/blob/master/OpenEmu/Images.xcassets/AppIcon.appiconset/icon_256x256.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "macOS",
+    "Desc": " ",
+    "Emulator Platforms": "Multi-system"
+  },
+  {
+    "Name": "Mupen64Plus",
+    "Url": "https://github.com/mupen64plus/mupen64plus-core/releases",
+    "Image": "https://github.com/mupen64plus/mupen64plus-core/blob/master/data/mupen64plus.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - Nintendo 64"
+  },
+  {
+    "Name": "FCEUX",
+    "Url": "https://github.com/TASVideos/fceux/releases",
+    "Image": "https://github.com/TASVideos/fceux/blob/master/fceux.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - NES"
+  },
+  {
+    "Name": "BizHawk",
+    "Url": "https://github.com/TASVideos/BizHawk/releases",
+    "Image": "https://github.com/TASVideos/BizHawk/blob/master/Assets/bizhawk.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "Multi-system"
+  },
+  {
+    "Name": "Cxbx-Reloaded",
+    "Url": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/releases",
+    "Image": "https://github.com/Cxbx-Reloaded/Cxbx-Reloaded/blob/master/Cxbx.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "Microsoft - Xbox"
+  },
+  {
+    "Name": "Redream",
+    "Url": "https://github.com/DrkDream/redream/releases",
+    "Image": "https://github.com/DrkDream/redream/blob/master/res/icon.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux, macOS)",
+    "Desc": " ",
+    "Emulator Platforms": "Sega - Dreamcast"
+  },
+  {
+    "Name": "Mednafen",
+    "Url": "https://github.com/mednafen/mednafen/releases",
+    "Image": "https://github.com/mednafen/mednafen/blob/master/mednafen.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Multi-system"
+  },
+  {
+    "Name": "higan",
+    "Url": "https://github.com/higan-emu/higan/releases",
+    "Image": "https://github.com/higan-emu/higan/blob/master/higan.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Multi-system"
+  },
+  {
+    "Name": "DOSBox",
+    "Url": "https://github.com/dosbox-staging/dosbox-staging/releases",
+    "Image": "https://github.com/dosbox-staging/dosbox-staging/blob/main/resources/windows/dosbox.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "DOS"
+  },
+  {
+    "Name": "VisualBoyAdvance-M",
+    "Url": "https://github.com/visualboyadvance-m/visualboyadvance-m/releases",
+    "Image": "https://github.com/visualboyadvance-m/visualboyadvance-m/blob/master/src/wx/vbam.xpm?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - Game Boy Advance, Game Boy, Game Boy Color"
+  },
+  {
+    "Name": "Project64",
+    "Url": "https://github.com/project64/project64/releases",
+    "Image": "https://github.com/project64/project64/blob/master/Source/Resource Files/project64.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - Nintendo 64"
+  },
+  {
+    "Name": "Stella",
+    "Url": "https://github.com/stella-emu/stella/releases",
+    "Image": "https://github.com/stella-emu/stella/blob/master/src/resources/stella.png?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Atari - 2600"
+  },
+  {
+    "Name": "SameBoy",
+    "Url": "https://github.com/LIJI32/SameBoy/releases",
+    "Image": "https://github.com/LIJI32/SameBoy/blob/master/resources/icon.ico?raw=true",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "Nintendo - Game Boy, Game Boy Color"
   }
 ]
