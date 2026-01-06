@@ -142,7 +142,7 @@
   {
     "Name": "Ryujinx",
     "Url": "https://github.com/Ryujinx/Ryujinx/releases",
-    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Ruyjinx/Cover.png",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Ruyjinx/Cover.png,
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux)",
