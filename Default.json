@@ -362,7 +362,7 @@
   {
     "Name": "Project64",
     "Url": "https://github.com/project64/project64/releases",
-    "Image": "https://github.com/project64/project64/blob/master/Source/Resource Files/project64.ico?raw=true",
+    "Image": "https://github.com/project64/project64blob/master/Source/Resource%20Files/project64.ico?raw=true",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
@@ -394,6 +394,11 @@
     "Url": "https://github.com/xbmc/xbmc",
     "Image": "https://github.com/xbmc/xbmc/blob/master/xbmc/media/icon.png?raw=true",
     "Genre": "Media Player",
+    "Genres": [
+      "Media",
+      "Media Player",
+      "Video Player"
+    ],
     "Type": "App",
     "Platform": "Multi-platform",
     "Desc": " ",
@@ -404,6 +409,11 @@
     "Url": "https://github.com/videolan/vlc",
     "Image": "https://github.com/videolan/vlc/blob/master/share/icons/256x256/vlc.png?raw=true",
     "Genre": "Media Player",
+    "Genres": [
+      "Media",
+      "Media Player",
+      "Video Player"
+    ],
     "Type": "App",
     "Platform": "Multi-platform",
     "Desc": " ",
@@ -413,9 +423,14 @@
     "Name": "Plex",
     "Url": "https://github.com/plexinc",
     "Image": "",
-    "Genre": "Media Server, Media",
+    "Genre": "Media Server",
+    "Genres": [
+      "Media",
+      "Media Server",
+      "Video Player"
+    ],
     "Type": "App",
-    "Platform": " ",
+    "Platform": "Multi-platform",
     "Desc": " ",
     "Emulator Platforms": "None"
   },
