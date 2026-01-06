@@ -132,7 +132,7 @@
   {
     "Name": "Yuzu",
     "Url": "https://github.com/yuzu-emu/yuzu/releases",
-    "Image": "https://github.com/yuzu-emu/yuzu/blob/master/icon.png",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Yuzu%20Emulator/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux)",
