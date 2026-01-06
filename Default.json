@@ -6,7 +6,7 @@
     "Genre": "Media",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": " ", 
+    "Desc": " ",
     "Emulator Platforms": "None"
   },
   {
@@ -16,7 +16,7 @@
     "Genre": "Media",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": " ", 
+    "Desc": " ",
     "Emulator Platforms": "None"
   },
   {
@@ -26,7 +26,7 @@
     "Genre": "Media",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": " ", 
+    "Desc": " ",
     "Emulator Platforms": "None"
   },
   {
@@ -36,7 +36,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": " ", 
+    "Desc": " ",
     "Emulator Platforms": "Nintendo - GameCube, Nintendo - Wii"
   },
   {
@@ -46,7 +46,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": "https://raw.githubusercontent.com/Koriebonx98/AppStore-/main/Images/Xenia/Desc.json", 
+    "Desc": "https://raw.githubusercontent.com/Koriebonx98/AppStore-/main/Images/Xenia/Desc.json",
     "Emulator Platforms": "Microsoft - Xbox 360"
   },
   {
@@ -56,7 +56,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": " ", 
+    "Desc": " ",
     "Emulator Platforms": "Microsoft - Xbox 360"
   },
   {
@@ -66,27 +66,87 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": " ", 
+    "Desc": " ",
     "Emulator Platforms": "Microsoft - Xbox"
   },
   {
-    "Name": "All 4",
-    "Url": "https://github.com/Koriebonx98/All-4-App-/releases",
-    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/All%204/Cover.png",
-    "Genre": "Media",
+    "Name": "ShadPS4",
+    "Url": "https://github.com/shadps4-emu/shadPS4",
+    "Image": "https://github.com/shadps4-emu/shadPS4/blob/main/Cover.png",
+    "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
     "Desc": " ",
-    "Emulator Platforms": "None"
+    "Emulator Platforms": "Sony - PlayStation 4"
   },
   {
-    "Name": "MY 5",
-    "Url": "https://github.com/Koriebonx98/All-4-App-/releases",
-    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/My%205/Cover.png",
-    "Genre": "Media",
+    "Name": "RPCS3",
+    "Url": "https://github.com/RPCS3/rpcs3/releases",
+    "Image": "https://github.com/RPCS3/rpcs3/blob/main/cover.jpg",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux)",
+    "Desc": "https://rpcs3.net",
+    "Emulator Platforms": "Sony - PlayStation 3"
+  },
+  {
+    "Name": "Cemu",
+    "Url": "https://github.com/cemu-project/Cemu/releases",
+    "Image": "https://github.com/cemu-project/Cemu/blob/main/icon.png",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": "http://cemu.info",
+    "Emulator Platforms": "Nintendo - Wii U"
+  },
+  {
+    "Name": "RetroArch",
+    "Url": "https://github.com/libretro/RetroArch/releases",
+    "Image": "https://github.com/libretro/RetroArch/blob/master/logo.png",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": "https://www.retroarch.com",
+    "Emulator Platforms": "Various (Nintendo, Sony, Sega, Atari, etc.)"
+  },
+  {
+    "Name": "PPSSPP",
+    "Url": "https://github.com/hrydgard/ppsspp/releases",
+    "Image": "https://github.com/hrydgard/ppsspp/blob/master/assets/icon.ppsspp_app.png",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": "https://www.ppsspp.org",
+    "Emulator Platforms": "Sony - PSP"
+  },
+  {
+    "Name": "NullDC",
+    "Url": "https://github.com/mgbellemare/nulldc/releases",
+    "Image": "https://github.com/mgbellemare/nulldc/blob/master/cover.png",
+    "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
     "Desc": " ",
-    "Emulator Platforms": "None"
+    "Emulator Platforms": "Sega - Dreamcast"
+  },
+  {
+    "Name": "Yuzu",
+    "Url": "https://github.com/yuzu-emu/yuzu/releases",
+    "Image": "https://github.com/yuzu-emu/yuzu/blob/master/icon.png",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux)",
+    "Desc": "https://yuzu-emu.org",
+    "Emulator Platforms": "Nintendo - Switch"
+  },
+  {
+    "Name": "Ryujinx",
+    "Url": "https://github.com/Ryujinx/Ryujinx/releases",
+    "Image": "https://github.com/Ryujinx/Ryujinx/blob/main/Ryujinx.png",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "PC (Windows, Linux)",
+    "Desc": "https://ryujinx.org",
+    "Emulator Platforms": "Nintendo - Switch"
   }
 ]
