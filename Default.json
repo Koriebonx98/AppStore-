@@ -86,7 +86,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux)",
-    "Desc": "https://rpcs3.net",
+    "Desc": " ",
     "Emulator Platforms": "Sony - PlayStation 3"
   },
   {
@@ -96,7 +96,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
-    "Desc": "http://cemu.info",
+    "Desc": " ",
     "Emulator Platforms": "Nintendo - Wii U"
   },
   {
@@ -106,7 +106,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "Multi-platform",
-    "Desc": "https://www.retroarch.com",
+    "Desc": " ",
     "Emulator Platforms": "Various (Nintendo, Sony, Sega, Atari, etc.)"
   },
   {
@@ -116,7 +116,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "Multi-platform",
-    "Desc": "https://www.ppsspp.org",
+    "Desc": " ",
     "Emulator Platforms": "Sony - PSP"
   },
   {
@@ -136,7 +136,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux)",
-    "Desc": "https://yuzu-emu.org",
+    "Desc": " ",
     "Emulator Platforms": "Nintendo - Switch"
   },
   {
@@ -146,7 +146,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux)",
-    "Desc": "https://ryujinx.org",
+    "Desc": "",
     "Emulator Platforms": "Nintendo - Switch"
   },
   {
