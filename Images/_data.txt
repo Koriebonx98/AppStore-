@@ -1,0 +1,1 @@
+make subfolder named after app. inc "Cover.ext" e.g "Cover.png"
