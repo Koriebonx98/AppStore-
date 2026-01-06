@@ -2,28 +2,64 @@
   {
     "Name": "Youtube",
     "Url": "https://github.com/Koriebonx98/Youtube_App/releases",
-    "Image": "https://github.com/Koriebonx98/Youtube_App/blob/main/Cover.png"
-    "Genre": "Media"
-    "Type": "App"
-    "Platform": "PC (Windows)"
-    "Emulator Platforms" : "None"
+    "Image": "https://github.com/Koriebonx98/Youtube_App/blob/main/Cover.png",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Emulator Platforms": "None"
   },
   {
     "Name": "Itv Player",
     "Url": "https://github.com/Koriebonx98/ITV_App/releases",
-    "Image": "https://github.com/Koriebonx98/ITV_App/blob/main/Cover.png"
-    "Genre": "Media"
-    "Type": "App"
-    "Platform": "PC (Windows)"
-    "Emulator Platforms" : "None"
+    "Image": "https://github.com/Koriebonx98/ITV_App/blob/main/Cover.png",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Emulator Platforms": "None"
   },
   {
     "Name": "BBC Iplayer",
     "Url": "https://github.com/Koriebonx98/BBC-Iplayer/releases",
-    "Image": "https://github.com/Koriebonx98/BBC-Iplayer/blob/main/Cover.png"
-    "Genre": "Media"
-    "Type": "App"
-    "Platform": "PC (Windows)"
-    "Emulator Platforms" : "None"
+    "Image": "https://github.com/Koriebonx98/BBC-Iplayer/blob/main/Cover.png",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Emulator Platforms": "None"
+  },
+  {
+    "Name": "Dolphin",
+    "Url": "https://github.com/dolphin-emu/dolphin/releases",
+    "Image": "https://example.com/dolphin.png",
+    "Genre": "Emulator",
+    "Type": "Software",
+    "Platform": "PC (Windows)",
+    "Emulator Platforms": "GameCube, Wii"
+  },
+  {
+    "Name": "Xenia",
+    "Url": "https://github.com/xenia-project/xenia/releases",
+    "Image": "https://example.com/xenia.png",
+    "Genre": "Emulator",
+    "Type": "Software",
+    "Platform": "PC (Windows)",
+    "Emulator Platforms": "Xbox 360"
+  },
+  {
+    "Name": "Xenia Canary",
+    "Url": "https://github.com/xenia-canary/xenia-canary/releases",
+    "Image": "https://example.com/xenia-canary.png",
+    "Genre": "Emulator",
+    "Type": "Software",
+    "Platform": "PC (Windows)",
+    "Emulator Platforms": "Xbox 360"
+  },
+  {
+    "Name": "Xemu",
+    "Url": "https://github.com/mborgerson/xemu/releases",
+    "Image": "https://example.com/xemu.png",
+    "Genre": "Emulator",
+    "Type": "Software",
+    "Platform": "PC (Windows)",
+    "Emulator Platforms": "Original Xbox"
   }
 ]
