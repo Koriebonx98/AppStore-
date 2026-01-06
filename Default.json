@@ -1,20 +1,32 @@
-[
-  {
-    "Name": "Youtube",
-    "Url": "https://github.com/Koriebonx98/Youtube_App/releases",
-    "Image": "https://github.com/Koriebonx98/Youtube_App/blob/main/Cover.png",
-    "Genre": "Media"
-  },
-  {
-    "Name": "Itv Player",
-    "Url": "https://github.com/Koriebonx98/ITV_App/releases",
-    "Image": "https://github.com/Koriebonx98/ITV_App/blob/main/Cover.png",
-    "Genre": "Media"
-  },
-  {
-    "Name": "BBC Iplayer",
-    "Url": "https://github.com/Koriebonx98/BBC-Iplayer/releases",
-    "Image": "https://github.com/Koriebonx98/BBC-Iplayer/blob/main/Cover.png",
-    "Genre": "Media"
-  }
-]
+{
+  "Applications": [
+    {
+      "Name": "ExampleApp",
+      "ID": "exampleapp123",
+      "Description": "An example application",
+      "DownloadLink": "http://example.com/download",
+      "PlatformName": "PC (Windows)",
+      "Type": "App"
+    }
+  ],
+  "Emulators": [
+    {
+      "Name": "ExampleEmulator",
+      "ID": "exampleemu123",
+      "Description": "An example emulator",
+      "DownloadLink": "http://example.com/emudownload",
+      "PlatformSpecificName": "PSP Emulator",
+      "PlatformName": "PlayStation Portable",
+      "Type": "Emulator"
+    },
+    {
+      "Name": "NewExampleEmulator",
+      "ID": "newexampleemu456",
+      "Description": "A new example emulator",
+      "DownloadLink": "http://example.com/newemudownload",
+      "PlatformSpecificName": "N64 Emulator",
+      "PlatformName": "Nintendo 64",
+      "Type": "Emulator"
+    }
+  ]
+}
