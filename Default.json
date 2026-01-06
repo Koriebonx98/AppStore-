@@ -1,5 +1,15 @@
 [
   {
+    "Name": "ModDB",
+    "Url": "https://github.com/Koriebonx98/ModDB-App/releases",
+    "Image": "https://github.com/Koriebonx98/ModDB/blob/main/Cover.png",
+    "Genre": "Entertainment",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
+  },
+  {
     "Name": "Youtube",
     "Url": "https://github.com/Koriebonx98/Youtube_App/releases",
     "Image": "https://github.com/Koriebonx98/Youtube_App/blob/main/Cover.png",
