@@ -1,24 +1,172 @@
-{
-  "Apps": [
-    {
-      "Name": "My 5",
-      "Url": "",
-      "Image": "",
-      "Genre": "Media",
-      "Type": "App",
-      "Platform": "",
-      "Desc": "",
-      "Emulator Platforms": "None"
-    },
-    {
-      "Name": "All 4",
-      "Url": "",
-      "Image": "",
-      "Genre": "Media",
-      "Type": "App",
-      "Platform": "",
-      "Desc": "",
-      "Emulator Platforms": "None"
-    }
-  ]
-}
+ [
+ {
+ "Name": "Youtube",
+ "Url": "https://github.com/Koriebonx98/Youtube_App/releases",
+ "Image": "https://github.com/Koriebonx98/Youtube_App/blob/main/Cover.png",
+ "Genre": "Media",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "None"
+ },
+ {
+ "Name": "Itv Player",
+ "Url": "https://github.com/Koriebonx98/ITV_App/releases",
+ "Image": "https://github.com/Koriebonx98/ITV_App/blob/main/Cover.png",
+ "Genre": "Media",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "None"
+ },
+ {
+ "Name": "BBC Iplayer",
+ "Url": "https://github.com/Koriebonx98/BBC-Iplayer/releases",
+ "Image": "https://github.com/Koriebonx98/BBC-Iplayer/blob/main/Cover.png",
+ "Genre": "Media",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "None"
+ },
+ {
+ "Name": "Dolphin",
+ "Url": "https://github.com/dolphin-emu/dolphin/releases",
+ "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Dolphin%20Emulator/Cover.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "Nintendo - GameCube, Nintendo - Wii"
+ },
+ {
+ "Name": "Xenia",
+ "Url": "https://github.com/xenia-project/xenia/releases",
+ "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Xenia/Cover.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": "https://raw.githubusercontent.com/Koriebonx98/AppStore-/main/Images/Xenia/Desc.json",
+ "Emulator Platforms": "Microsoft - Xbox 360"
+ },
+ {
+ "Name": "Xenia Canary",
+ "Url": "https://github.com/xenia-canary/xenia-canary/releases",
+ "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Xenia%20Canary/Cover.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "Microsoft - Xbox 360"
+ },
+ {
+ "Name": "Xemu",
+ "Url": "https://github.com/mborgerson/xemu/releases",
+ "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Xemu%20Emulator/Cover.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "Microsoft - Xbox"
+ },
+ {
+ "Name": "ShadPS4",
+ "Url": "https://github.com/shadps4-emu/shadPS4",
+ "Image": "https://github.com/shadps4-emu/shadPS4/blob/main/Cover.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "Sony - PlayStation 4"
+ },
+ {
+ "Name": "RPCS3",
+ "Url": "https://github.com/RPCS3/rpcs3/releases",
+ "Image": "https://github.com/RPCS3/rpcs3/blob/main/cover.jpg",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows, Linux)",
+ "Desc": "https://rpcs3.net",
+ "Emulator Platforms": "Sony - PlayStation 3"
+ },
+ {
+ "Name": "Cemu",
+ "Url": "https://github.com/cemu-project/Cemu/releases",
+ "Image": "https://github.com/cemu-project/Cemu/blob/main/icon.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": "http://cemu.info",
+ "Emulator Platforms": "Nintendo - Wii U"
+ },
+ {
+ "Name": "RetroArch",
+ "Url": "https://github.com/libretro/RetroArch/releases",
+ "Image": "https://github.com/libretro/RetroArch/blob/master/logo.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "Multi-platform",
+ "Desc": "https://www.retroarch.com",
+ "Emulator Platforms": "Various (Nintendo, Sony, Sega, Atari, etc.)"
+ },
+ {
+ "Name": "PPSSPP",
+ "Url": "https://github.com/hrydgard/ppsspp/releases",
+ "Image": "https://github.com/hrydgard/ppsspp/blob/master/assets/icon.ppsspp_app.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "Multi-platform",
+ "Desc": "https://www.ppsspp.org",
+ "Emulator Platforms": "Sony - PSP"
+ },
+ {
+ "Name": "NullDC",
+ "Url": "https://github.com/mgbellemare/nulldc/releases",
+ "Image": "https://github.com/mgbellemare/nulldc/blob/master/cover.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows)",
+ "Desc": " ",
+ "Emulator Platforms": "Sega - Dreamcast"
+ },
+ {
+ "Name": "Yuzu",
+ "Url": "https://github.com/yuzu-emu/yuzu/releases",
+ "Image": "https://github.com/yuzu-emu/yuzu/blob/master/icon.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows, Linux)",
+ "Desc": "https://yuzu-emu.org",
+ "Emulator Platforms": "Nintendo - Switch"
+ },
+ {
+ "Name": "Ryujinx",
+ "Url": "https://github.com/Ryujinx/Ryujinx/releases",
+ "Image": "https://github.com/Ryujinx/Ryujinx/blob/main/Ryujinx.png",
+ "Genre": "Emulator",
+ "Type": "App",
+ "Platform": "PC (Windows, Linux)",
+ "Desc": "https://ryujinx.org",
+ "Emulator Platforms": "Nintendo - Switch"
+ },
+ {
+ "Name": "My 5",
+ "Url": "",
+ "Image": "",
+ "Genre": "Media",
+ "Type": "App",
+ "Platform": "",
+ "Desc": "",
+ "Emulator Platforms": "None"
+ },
+ {
+ "Name": "All 4",
+ "Url": "",
+ "Image": "",
+ "Genre": "Media",
+ "Type": "App",
+ "Platform": "",
+ "Desc": "",
+ "Emulator Platforms": "None"
+ }
+]
