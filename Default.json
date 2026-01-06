@@ -388,5 +388,45 @@
     "Platform": "Multi-platform",
     "Desc": " ",
     "Emulator Platforms": "Nintendo - Game Boy, Game Boy Color"
+  },
+  {
+    "Name": "Kodi",
+    "Url": "https://github.com/xbmc/xbmc",
+    "Image": "https://github.com/xbmc/xbmc/blob/master/xbmc/media/icon.png?raw=true",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "None"
+  },
+  {
+    "Name": "VLC Player",
+    "Url": "https://github.com/videolan/vlc",
+    "Image": "https://github.com/videolan/vlc/blob/master/share/icons/256x256/vlc.png?raw=true",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "None"
+  },
+  {
+    "Name": "Plex",
+    "Url": "https://github.com/plexinc",
+    "Image": "",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": " ",
+    "Emulator Platforms": "None"
+  },
+  {
+    "Name": "Nucleus Co-op",
+    "Url": "https://github.com/SplitScreen-Me/splitscreenme-nucleus",
+    "Image": "",
+    "Genre": "Entertainment",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
   }
 ]
