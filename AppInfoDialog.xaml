@@ -1,0 +1,30 @@
+<Window x:Class="GitHub_Store.AppInfoDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="App Info" SizeToContent="Manual" WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowState="Maximized">
+    <Grid>
+        <!-- Fullscreen dark overlay -->
+        <Rectangle Fill="#80000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <!-- Fullscreen info card -->
+        <Border Padding="48" Background="White" CornerRadius="0"
+                HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Border.Effect>
+                <DropShadowEffect Color="#888" BlurRadius="18" ShadowDepth="0" />
+            </Border.Effect>
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" MaxWidth="900">
+                    <Image x:Name="AppImage" Height="220" Margin="0,0,0,18" Stretch="Uniform" />
+                    <TextBlock x:Name="AppName" FontWeight="Bold" FontSize="28" Margin="0,0,0,8" TextAlignment="Center" />
+                    <TextBlock x:Name="AppGenre" FontSize="16" Foreground="DarkGray" Margin="0,0,0,6" TextAlignment="Center" />
+                    <TextBlock x:Name="AppType" FontSize="16" Margin="0,0,0,6" TextAlignment="Center" />
+                    <TextBlock x:Name="AppPlatform" FontSize="16" Margin="0,0,0,6" TextAlignment="Center" />
+                    <TextBlock x:Name="AppEmulatorPlatforms" FontSize="16" Margin="0,0,0,6" TextAlignment="Center" TextWrapping="Wrap" />
+                    <TextBlock x:Name="AppDescription" FontSize="16" Margin="0,16,0,16" TextAlignment="Center" TextWrapping="Wrap" Foreground="Black" />
+                    <Button Content="Open App Page" x:Name="AppUrlButton" Height="38" Background="#0078D7" Foreground="White" FontWeight="SemiBold" BorderBrush="#0078D7" BorderThickness="1" Margin="0,0,0,14" Click="AppUrlButton_Click" />
+                    <Button Content="Close" Height="38" Margin="0" Click="CloseButton_Click" />
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+</Window>
