@@ -1,32 +1,28 @@
 {
   "Applications": [
     {
-      "Name": "ExampleApp",
-      "ID": "exampleapp123",
-      "Description": "An example application",
-      "DownloadLink": "http://example.com/download",
+      "ID": "1",
+      "Name": "YouTube",
+      "Description": "A video streaming platform where users can upload, share, and view videos.",
       "PlatformName": "PC (Windows)",
-      "Type": "App"
-    }
-  ],
-  "Emulators": [
-    {
-      "Name": "ExampleEmulator",
-      "ID": "exampleemu123",
-      "Description": "An example emulator",
-      "DownloadLink": "http://example.com/emudownload",
-      "PlatformSpecificName": "PSP Emulator",
-      "PlatformName": "PlayStation Portable",
-      "Type": "Emulator"
+      "Type": "App",
+      "DownloadLink": "https://www.youtube.com/download/windows"
     },
     {
-      "Name": "NewExampleEmulator",
-      "ID": "newexampleemu456",
-      "Description": "A new example emulator",
-      "DownloadLink": "http://example.com/newemudownload",
-      "PlatformSpecificName": "N64 Emulator",
-      "PlatformName": "Nintendo 64",
-      "Type": "Emulator"
+      "ID": "2",
+      "Name": "BBC iPlayer",
+      "Description": "A streaming video on demand service featuring a vast library of BBC programs.",
+      "PlatformName": "PC (Windows)",
+      "Type": "App",
+      "DownloadLink": "https://www.bbc.co.uk/iplayer"
+    },
+    {
+      "ID": "3",
+      "Name": "ITV Player",
+      "Description": "An online video-on-demand service for catching up on streaming ITV programs.",
+      "PlatformName": "PC (Windows)",
+      "Type": "App",
+      "DownloadLink": "https://www.itv.com"
     }
   ]
 }
