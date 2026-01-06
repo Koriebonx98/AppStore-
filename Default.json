@@ -3,15 +3,27 @@
     "Name": "Youtube",
     "Url": "https://github.com/Koriebonx98/Youtube_App/releases",
     "Image": "https://github.com/Koriebonx98/Youtube_App/blob/main/Cover.png"
+    "Genre": "Media"
+    "Type": "App"
+    "Platform": "PC (Windows)"
+    "Emulator Platforms" : "None"
   },
   {
     "Name": "Itv Player",
     "Url": "https://github.com/Koriebonx98/ITV_App/releases",
     "Image": "https://github.com/Koriebonx98/ITV_App/blob/main/Cover.png"
+    "Genre": "Media"
+    "Type": "App"
+    "Platform": "PC (Windows)"
+    "Emulator Platforms" : "None"
   },
   {
     "Name": "BBC Iplayer",
     "Url": "https://github.com/Koriebonx98/BBC-Iplayer/releases",
     "Image": "https://github.com/Koriebonx98/BBC-Iplayer/blob/main/Cover.png"
+    "Genre": "Media"
+    "Type": "App"
+    "Platform": "PC (Windows)"
+    "Emulator Platforms" : "None"
   }
 ]
