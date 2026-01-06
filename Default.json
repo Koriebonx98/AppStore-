@@ -148,5 +148,25 @@
     "Platform": "PC (Windows, Linux)",
     "Desc": "https://ryujinx.org",
     "Emulator Platforms": "Nintendo - Switch"
+  },
+  {
+    "Name": "My 5",
+    "Url": "https://github.com/Koriebonx98/My5_App/releases",
+    "Image": "https://github.com/Koriebonx98/My5_App/blob/main/Cover.png",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
+  },
+  {
+    "Name": "All 4",
+    "Url": "https://github.com/Koriebonx98/All4_App/releases",
+    "Image": "https://github.com/Koriebonx98/All4_App/blob/main/Cover.png",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
   }
 ]
