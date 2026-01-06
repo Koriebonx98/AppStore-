@@ -68,5 +68,25 @@
     "Platform": "PC (Windows)",
     "Desc": " ", 
     "Emulator Platforms": "Microsoft - Xbox"
+  },
+  {
+    "Name": "All 4",
+    "Url": "https://github.com/Koriebonx98/All-4-App-/releases",
+    "Image": "https://github.com/Koriebonx98/All-4-App-/blob/main/Cover.png",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
+  },
+  {
+    "Name": "MY 5",
+    "Url": "https://github.com/Koriebonx98/All-4-App-/releases",
+    "Image": "https://github.com/Koriebonx98/All-4-App-/blob/main/Cover.png",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
   }
 ]
