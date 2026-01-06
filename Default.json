@@ -102,7 +102,7 @@
   {
     "Name": "RetroArch",
     "Url": "https://github.com/libretro/RetroArch/releases",
-    "Image": "https://github.com/libretro/RetroArch/blob/master/logo.png",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Retroarch/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "Multi-platform",
