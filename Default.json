@@ -212,7 +212,7 @@
   {
     "Name": "PCSX2",
     "Url": "https://github.com/PCSX2/pcsx2/releases",
-    "Image": "https://github.com/PCSX2/pcsx2/blob/master/pcsx2/Resources/pcsx2.ico?raw=true",
+    "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/PCSX2/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows, Linux, macOS)",
