@@ -6,6 +6,7 @@
     "Genre": "Media",
     "Type": "App",
     "Platform": "PC (Windows)",
+    "Desc": " ", 
     "Emulator Platforms": "None"
   },
   {
@@ -15,6 +16,7 @@
     "Genre": "Media",
     "Type": "App",
     "Platform": "PC (Windows)",
+    "Desc": " ", 
     "Emulator Platforms": "None"
   },
   {
@@ -24,6 +26,7 @@
     "Genre": "Media",
     "Type": "App",
     "Platform": "PC (Windows)",
+    "Desc": " ", 
     "Emulator Platforms": "None"
   },
   {
@@ -33,6 +36,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
+    "Desc": " ", 
     "Emulator Platforms": "Nintendo - GameCube, Nintendo - Wii"
   },
   {
@@ -42,6 +46,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
+    "Desc": " ", 
     "Emulator Platforms": "Microsoft - Xbox 360"
   },
   {
@@ -51,6 +56,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
+    "Desc": " ", 
     "Emulator Platforms": "Microsoft - Xbox 360"
   },
   {
@@ -60,6 +66,7 @@
     "Genre": "Emulator",
     "Type": "App",
     "Platform": "PC (Windows)",
+    "Desc": " ", 
     "Emulator Platforms": "Microsoft - Xbox"
   }
 ]
