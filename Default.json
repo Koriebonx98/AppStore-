@@ -1,7 +1,7 @@
 [
   {
     "Name": "ModDB",
-    "Url": "https://github.com/Koriebonx98/ModDB-App/releases",
+    "Url": "https://github.com/Koriebonx98/ModDB-App",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/ModDB/Cover.png",
     "Genre": "Entertainment",
     "Type": "App",
@@ -11,7 +11,7 @@
   },
   {
     "Name": "Youtube",
-    "Url": "https://github.com/Koriebonx98/Youtube_App/releases",
+    "Url": "https://github.com/Koriebonx98/Youtube_App",
     "Image": "https://github.com/Koriebonx98/Youtube_App/blob/main/Cover.png",
     "Genre": "Media",
     "Type": "App",
@@ -21,7 +21,7 @@
   },
   {
     "Name": "Itv Player",
-    "Url": "https://github.com/Koriebonx98/ITV_App/releases",
+    "Url": "https://github.com/Koriebonx98/ITV_App",
     "Image": "https://github.com/Koriebonx98/ITV_App/blob/main/Cover.png",
     "Genre": "Media",
     "Type": "App",
@@ -31,7 +31,7 @@
   },
   {
     "Name": "BBC Iplayer",
-    "Url": "https://github.com/Koriebonx98/BBC-Iplayer/releases",
+    "Url": "https://github.com/Koriebonx98/BBC-Iplayer",
     "Image": "https://github.com/Koriebonx98/BBC-Iplayer/blob/main/Cover.png",
     "Genre": "Media",
     "Type": "App",
@@ -41,7 +41,7 @@
   },
   {
     "Name": "Dolphin",
-    "Url": "https://github.com/dolphin-emu/dolphin/releases",
+    "Url": "https://github.com/dolphin-emu/dolphin",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Dolphin%20Emulator/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
@@ -51,7 +51,7 @@
   },
   {
     "Name": "Xenia",
-    "Url": "https://github.com/xenia-project/xenia/releases",
+    "Url": "https://github.com/xenia-project/xenia",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Xenia/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
@@ -61,7 +61,7 @@
   },
   {
     "Name": "Xenia Canary",
-    "Url": "https://github.com/xenia-canary/xenia-canary/releases",
+    "Url": "https://github.com/xenia-canary/xenia-canary",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Xenia%20Canary/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
@@ -91,7 +91,7 @@
   },
   {
     "Name": "RPCS3",
-    "Url": "https://github.com/RPCS3/rpcs3/releases",
+    "Url": "https://github.com/RPCS3/rpcs3",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/RPCS3/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
@@ -101,7 +101,7 @@
   },
   {
     "Name": "Cemu",
-    "Url": "https://github.com/cemu-project/Cemu/releases",
+    "Url": "https://github.com/cemu-project/Cemu",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Cemu/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
@@ -111,7 +111,7 @@
   },
   {
     "Name": "RetroArch",
-    "Url": "https://github.com/libretro/RetroArch/releases",
+    "Url": "https://github.com/libretro/RetroArch",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Retroarch/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
@@ -121,7 +121,7 @@
   },
   {
     "Name": "PPSSPP",
-    "Url": "https://github.com/hrydgard/ppsspp/releases",
+    "Url": "https://github.com/hrydgard/ppsspp",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/PPSSPP/Cover.png",
     "Genre": "Emulator",
     "Type": "App",
@@ -131,7 +131,7 @@
   },
   {
     "Name": "NullDC",
-    "Url": "https://github.com/mgbellemare/nulldc/releases",
+    "Url": "https://github.com/mgbellemare/nulldc",
     "Image": "https://github.com/mgbellemare/nulldc/blob/master/cover.png",
     "Genre": "Emulator",
     "Type": "App",
