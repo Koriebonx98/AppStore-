@@ -443,5 +443,15 @@
     "Platform": "PC (Windows)",
     "Desc": " ",
     "Emulator Platforms": "None"
+  },
+  {
+    "Name": "Kick Streaming",
+    "Url": "https://github.com/Koriebonx98/kick-streaming-",
+    "Image": "",
+    "Genre": "Media",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
   }
 ]
