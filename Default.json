@@ -540,5 +540,60 @@
     "Platform": "PC (Windows)",
     "Desc": " ",
     "Emulator Platforms": "None"
+  },
+  {
+    "Name": "Azahar Emulator",
+    "GameName": "",
+    "Url": "https://github.com/azahar-emu/azahar",
+    "Image": "",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": "",
+    "Emulator Platforms": "PlayStation"
+  },
+  {
+    "Name": "Mandarine",
+    "GameName": "",
+    "Url": "https://github.com/mandarine3ds/mandarine/",
+    "Image": "",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": "",
+    "Emulator Platforms": "Nintendo - 3DS"
+  },
+  {
+    "Name": "Panda3ds",
+    "GameName": "",
+    "Url": "https://github.com/wheremyfoodat/Panda3DS",
+    "Image": "",
+    "Genre": "Emulator",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": "",
+    "Emulator Platforms": "Nintendo - 3DS"
+  },
+  {
+    "Name": "Achievement Watcher",
+    "GameName": "",
+    "Url": "https://github.com/xan105/Achievement-Watcher",
+    "Image": "",
+    "Genre": "Tools",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": "",
+    "Emulator Platforms": "None"
+  },
+  {
+    "Name": "Playnite",
+    "GameName": "",
+    "Url": "https://github.com/JosefNemec/Playnite",
+    "Image": "",
+    "Genre": "Tools",
+    "Type": "App",
+    "Platform": "Multi-platform",
+    "Desc": "",
+    "Emulator Platforms": "None"
   }
 ]
