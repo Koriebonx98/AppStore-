@@ -1,5 +1,15 @@
 [
   {
+  "Name":  "Sudachi",
+  "Url": "https://github.com/yoalix/sudachi",
+  "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Sudachi/Cover.png",
+  "Genre": "Emulator",
+  "Type": "App",
+  "Platform": "Multi-platform",
+  "Desc": " ",
+  "Emulator Platforms": "Nintendo - Switch"
+}
+  {
     "Name": "Twitch Streaming",
     "Url": "https://github.com/Koriebonx98/Twitch-Streaming-",
     "Image": "https://github.com/Koriebonx98/AppStore-/blob/main/Images/Twitch-Streaming/Cover.png",
