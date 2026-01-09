@@ -529,5 +529,16 @@
     "Platform": "PC (Windows)",
     "Desc": " ",
     "Emulator Platforms": "Nintendo - 3DS"
+  },
+  {
+    "Name": "iw4x",
+    "GameName": "Call of Duty: Modern Warfare 2",
+    "Url": "https://github.com/iw4x/iw4x-client",
+    "Image": "",
+    "Genre": "Mod",
+    "Type": "App",
+    "Platform": "PC (Windows)",
+    "Desc": " ",
+    "Emulator Platforms": "None"
   }
 ]
