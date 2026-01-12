@@ -368,21 +368,18 @@
             type.className = 'app-info';
             type.innerHTML = `<strong>Type:</strong> ${app.Type || 'App'}`;
             
+            // Append common elements
+            content.appendChild(name);
+            content.appendChild(genre);
+            content.appendChild(platform);
+            content.appendChild(type);
+            
             // Emulator platforms info (if applicable)
             if (app['Emulator Platforms'] && app['Emulator Platforms'] !== 'None') {
                 const emulatorPlatforms = document.createElement('div');
                 emulatorPlatforms.className = 'app-info';
                 emulatorPlatforms.innerHTML = `<strong>Emulates:</strong> ${app['Emulator Platforms']}`;
-                content.appendChild(name);
-                content.appendChild(genre);
-                content.appendChild(platform);
-                content.appendChild(type);
                 content.appendChild(emulatorPlatforms);
-            } else {
-                content.appendChild(name);
-                content.appendChild(genre);
-                content.appendChild(platform);
-                content.appendChild(type);
             }
             
             // Link to repository
