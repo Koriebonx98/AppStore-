@@ -240,6 +240,23 @@
         let allApps = [];
         let filteredApps = [];
 
+        // HTML escape function to prevent XSS
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Validate URL to prevent javascript: and data: URLs
+        function sanitizeUrl(url) {
+            if (!url) return '#';
+            const urlStr = String(url).trim();
+            if (urlStr.startsWith('javascript:') || urlStr.startsWith('data:')) {
+                return '#';
+            }
+            return urlStr;
+        }
+
         // Load JSON data
         async function loadApps() {
             try {
@@ -300,28 +317,32 @@
 
         // Create individual app card
         function createAppCard(app) {
-            const imageContent = app.Image && app.Image.trim() !== '' 
-                ? `<img src="${app.Image}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">`
-                : app.Name.charAt(0);
+            const escapedName = escapeHtml(app.Name || '');
+            const escapedGenre = escapeHtml(app.Genre || '');
+            const escapedPlatform = escapeHtml(app.Platform || '');
+            const escapedEmulatorPlatforms = escapeHtml(app['Emulator Platforms'] || '');
+            const sanitizedImageUrl = sanitizeUrl(app.Image);
+            const sanitizedRepoUrl = sanitizeUrl(app.Url);
+            const firstLetter = escapedName.charAt(0) || '?';
 
             return `
                 <div class="app-card">
                     <div class="app-image">
                         ${app.Image && app.Image.trim() !== '' 
-                            ? `<img src="${app.Image}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">` 
-                            : app.Name.charAt(0)
+                            ? `<img src="${sanitizedImageUrl}" alt="${escapedName}" onerror="this.parentElement.innerHTML='${firstLetter}'">` 
+                            : firstLetter
                         }
                     </div>
-                    <div class="app-name">${app.Name}</div>
+                    <div class="app-name">${escapedName}</div>
                     <div class="app-details">
-                        ${app.Genre ? `<div class="app-detail"><strong>Genre:</strong><span class="app-genre">${app.Genre}</span></div>` : ''}
-                        ${app.Platform ? `<div class="app-detail"><strong>Platform:</strong> ${app.Platform}</div>` : ''}
+                        ${app.Genre ? `<div class="app-detail"><strong>Genre:</strong><span class="app-genre">${escapedGenre}</span></div>` : ''}
+                        ${app.Platform ? `<div class="app-detail"><strong>Platform:</strong> ${escapedPlatform}</div>` : ''}
                         ${app['Emulator Platforms'] && app['Emulator Platforms'] !== 'None' 
-                            ? `<div class="app-detail"><strong>Emulates:</strong> ${app['Emulator Platforms']}</div>` 
+                            ? `<div class="app-detail"><strong>Emulates:</strong> ${escapedEmulatorPlatforms}</div>` 
                             : ''
                         }
                     </div>
-                    <a href="${app.Url}" target="_blank" class="app-link">View Repository →</a>
+                    <a href="${sanitizedRepoUrl}" target="_blank" class="app-link">View Repository →</a>
                 </div>
             `;
         }
