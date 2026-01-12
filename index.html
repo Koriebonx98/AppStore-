@@ -319,10 +319,7 @@
             return `
                 <div class="app-card">
                     <div class="app-image">
-                        ${app.Image && app.Image.trim() !== '' 
-                            ? `<img src="${imageUrl}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">` 
-                            : app.Name.charAt(0)
-                        }
+                        ${imageContent}
                     </div>
                     <div class="app-name">${app.Name}</div>
                     <div class="app-details">
