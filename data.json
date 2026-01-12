@@ -1,7 +1,1 @@
-[
-  {
-    "Name": "asd psxe",
-    "Url": "https://github.com/allkern/psxe",
-    "Emulator Platforms": "Playstation"
-  }
-]
+[{"Name":"psxe","URL":"https://github.com/allkern/psxe"}]
