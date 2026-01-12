@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        #searchBar {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #667eea;
+            border-radius: 50px;
+            outline: none;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        #searchBar:focus {
+            border-color: #764ba2;
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        }
+
+        #searchBar::placeholder {
+            color: #999;
+        }
+
+        .stats {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .app-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .app-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .app-details {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .app-detail {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .app-detail strong {
+            min-width: 90px;
+            color: #333;
+        }
+
+        .app-genre {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-left: 5px;
+        }
+
+        .app-link {
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            display: block;
+        }
+
+        .app-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.5em;
+            color: #667eea;
+        }
+
+        .letter-section {
+            margin-bottom: 40px;
+        }
+
+        .letter-header {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .apps-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 App Store</h1>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchBar" 
+                    placeholder="Search apps by name..." 
+                    autocomplete="off"
+                />
+            </div>
+            <div class="stats" id="stats">Loading apps...</div>
+        </header>
+        
+        <div id="appsContainer">
+            <div class="loading">Loading apps...</div>
+        </div>
+    </div>
+
+    <script>
+        let allApps = [];
+        let filteredApps = [];
+
+        // Load JSON data
+        async function loadApps() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load data.json');
+                }
+                allApps = await response.json();
+                filteredApps = [...allApps];
+                displayApps(filteredApps);
+                updateStats();
+            } catch (error) {
+                console.error('Error loading apps:', error);
+                document.getElementById('appsContainer').innerHTML = 
+                    '<div class="no-results">Error loading apps. Please make sure data.json exists.</div>';
+            }
+        }
+
+        // Display apps organized alphabetically
+        function displayApps(apps) {
+            const container = document.getElementById('appsContainer');
+            
+            if (apps.length === 0) {
+                container.innerHTML = '<div class="no-results">No apps found matching your search.</div>';
+                return;
+            }
+
+            // Sort apps alphabetically by name
+            const sortedApps = [...apps].sort((a, b) => 
+                a.Name.toLowerCase().localeCompare(b.Name.toLowerCase())
+            );
+
+            // Group apps by first letter
+            const groupedApps = {};
+            sortedApps.forEach(app => {
+                const firstLetter = app.Name.charAt(0).toUpperCase();
+                if (!groupedApps[firstLetter]) {
+                    groupedApps[firstLetter] = [];
+                }
+                groupedApps[firstLetter].push(app);
+            });
+
+            // Generate HTML for each letter section
+            let html = '';
+            Object.keys(groupedApps).sort().forEach(letter => {
+                html += `
+                    <div class="letter-section">
+                        <div class="letter-header">${letter}</div>
+                        <div class="apps-grid">
+                            ${groupedApps[letter].map(app => createAppCard(app)).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // Create individual app card
+        function createAppCard(app) {
+            const imageContent = app.Image && app.Image.trim() !== '' 
+                ? `<img src="${app.Image}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">`
+                : app.Name.charAt(0);
+
+            return `
+                <div class="app-card">
+                    <div class="app-image">
+                        ${app.Image && app.Image.trim() !== '' 
+                            ? `<img src="${app.Image}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">` 
+                            : app.Name.charAt(0)
+                        }
+                    </div>
+                    <div class="app-name">${app.Name}</div>
+                    <div class="app-details">
+                        ${app.Genre ? `<div class="app-detail"><strong>Genre:</strong><span class="app-genre">${app.Genre}</span></div>` : ''}
+                        ${app.Platform ? `<div class="app-detail"><strong>Platform:</strong> ${app.Platform}</div>` : ''}
+                        ${app['Emulator Platforms'] && app['Emulator Platforms'] !== 'None' 
+                            ? `<div class="app-detail"><strong>Emulates:</strong> ${app['Emulator Platforms']}</div>` 
+                            : ''
+                        }
+                    </div>
+                    <a href="${app.Url}" target="_blank" class="app-link">View Repository →</a>
+                </div>
+            `;
+        }
+
+        // Search functionality (case-insensitive)
+        function handleSearch(searchTerm) {
+            const term = searchTerm.toLowerCase().trim();
+            
+            if (term === '') {
+                filteredApps = [...allApps];
+            } else {
+                filteredApps = allApps.filter(app => 
+                    app.Name.toLowerCase().includes(term)
+                );
+            }
+            
+            displayApps(filteredApps);
+            updateStats();
+        }
+
+        // Update statistics
+        function updateStats() {
+            const statsElement = document.getElementById('stats');
+            const searchTerm = document.getElementById('searchBar').value.trim();
+            
+            if (searchTerm === '') {
+                statsElement.textContent = `Showing all ${allApps.length} apps`;
+            } else {
+                statsElement.textContent = `Found ${filteredApps.length} of ${allApps.length} apps`;
+            }
+        }
+
+        // Event listeners
+        document.getElementById('searchBar').addEventListener('input', (e) => {
+            handleSearch(e.target.value);
+        });
+
+        // Auto-refresh data every 30 seconds to reflect changes
+        setInterval(() => {
+            const currentSearch = document.getElementById('searchBar').value;
+            loadApps().then(() => {
+                if (currentSearch) {
+                    handleSearch(currentSearch);
+                }
+            });
+        }, 30000);
+
+        // Load apps on page load
+        loadApps();
+    </script>
+</body>
+</html>
