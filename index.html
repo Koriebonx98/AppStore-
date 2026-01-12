@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppStore - Browse Applications</title>
+    <style>
+        /* Base styling for the page */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        /* Search bar styling */
+        .search-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        #searchBar {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            outline: none;
+            transition: box-shadow 0.3s ease;
+        }
+
+        #searchBar:focus {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* App counter */
+        .app-count {
+            text-align: center;
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        /* Grid layout for app cards */
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px 0;
+        }
+
+        /* Individual app card styling */
+        .app-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .app-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+        }
+
+        .app-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .app-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .app-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .app-info strong {
+            margin-right: 5px;
+            color: #444;
+        }
+
+        .app-genre {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #667eea;
+            color: white;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-bottom: 10px;
+        }
+
+        .app-link {
+            margin-top: auto;
+            padding-top: 15px;
+        }
+
+        .app-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+        }
+
+        .app-link a:hover {
+            background: #764ba2;
+        }
+
+        /* Loading and error states */
+        .loading, .error, .no-results {
+            text-align: center;
+            color: white;
+            font-size: 1.3em;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .error {
+            color: #ff6b6b;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .apps-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 AppStore</h1>
+            <p class="subtitle">Browse and discover amazing applications</p>
+        </header>
+
+        <!-- Search bar for filtering apps -->
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="searchBar" 
+                placeholder="🔍 Search apps by name..."
+                aria-label="Search applications"
+            >
+        </div>
+
+        <!-- App counter display -->
+        <div class="app-count" id="appCount"></div>
+
+        <!-- Container for displaying app cards -->
+        <div class="apps-grid" id="appsContainer">
+            <div class="loading">Loading applications...</div>
+        </div>
+    </div>
+
+    <script>
+        /**
+         * APPLICATION DATA HANDLER
+         * This script handles fetching, processing, and displaying app data from Default.json
+         * 
+         * Key Features:
+         * 1. Fetches JSON data from the repository
+         * 2. Sorts apps alphabetically by name
+         * 3. Dynamically creates and renders app cards
+         * 4. Provides real-time search filtering (case-insensitive)
+         * 5. Automatically refreshes data when Default.json is updated
+         */
+
+        // Global variable to store the apps data
+        let appsData = [];
+        let filteredApps = [];
+
+        /**
+         * Fetch the Default.json file from the repository
+         * This function uses the Fetch API to retrieve JSON data
+         * 
+         * The path is relative to the HTML file location, ensuring
+         * the JSON file is loaded from the same directory
+         */
+        async function fetchAppsData() {
+            try {
+                // Fetch the Default.json file
+                // Using a relative path ensures it works regardless of hosting location
+                const response = await fetch('Default.json');
+                
+                // Check if the response is successful
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                // Parse the JSON response
+                const data = await response.json();
+                
+                // Store the data globally
+                appsData = data;
+                
+                // Sort apps alphabetically by name (A-Z)
+                // Using localeCompare for proper string comparison
+                appsData.sort((a, b) => a.Name.localeCompare(b.Name, 'en', { sensitivity: 'base' }));
+                
+                // Initially, show all apps
+                filteredApps = [...appsData];
+                
+                // Render the apps on the page
+                renderApps();
+                
+                // Update the app count
+                updateAppCount();
+                
+            } catch (error) {
+                // Handle errors (e.g., file not found, invalid JSON)
+                console.error('Error fetching app data:', error);
+                displayError('Failed to load applications. Please ensure Default.json exists.');
+            }
+        }
+
+        /**
+         * Render the apps to the DOM
+         * Creates HTML card elements for each app and displays them
+         */
+        function renderApps() {
+            const container = document.getElementById('appsContainer');
+            
+            // Clear the container
+            container.innerHTML = '';
+            
+            // Check if there are apps to display
+            if (filteredApps.length === 0) {
+                container.innerHTML = '<div class="no-results">No apps found matching your search.</div>';
+                return;
+            }
+            
+            // Create a card for each app
+            filteredApps.forEach(app => {
+                const card = createAppCard(app);
+                container.appendChild(card);
+            });
+        }
+
+        /**
+         * Create an individual app card element
+         * @param {Object} app - The app data object
+         * @returns {HTMLElement} - The card element
+         */
+        function createAppCard(app) {
+            // Create the main card container
+            const card = document.createElement('div');
+            card.className = 'app-card';
+            
+            // Create image container
+            const imageDiv = document.createElement('div');
+            imageDiv.className = 'app-image';
+            
+            // Check if image exists and is valid
+            if (app.Image && app.Image.trim() !== '') {
+                const img = document.createElement('img');
+                img.src = app.Image;
+                img.alt = `${app.Name} logo`;
+                // Handle image load errors by displaying the first letter as fallback
+                img.onerror = function() {
+                    imageDiv.innerHTML = app.Name.charAt(0).toUpperCase();
+                };
+                imageDiv.appendChild(img);
+            } else {
+                // If no image, display the first letter of the app name
+                imageDiv.textContent = app.Name.charAt(0).toUpperCase();
+            }
+            
+            // Create content container
+            const content = document.createElement('div');
+            content.className = 'app-content';
+            
+            // App name
+            const name = document.createElement('div');
+            name.className = 'app-name';
+            name.textContent = app.Name;
+            
+            // Genre badge
+            const genre = document.createElement('span');
+            genre.className = 'app-genre';
+            genre.textContent = app.Genre || 'General';
+            
+            // Platform info
+            const platform = document.createElement('div');
+            platform.className = 'app-info';
+            platform.innerHTML = `<strong>Platform:</strong> ${app.Platform || 'N/A'}`;
+            
+            // Type info
+            const type = document.createElement('div');
+            type.className = 'app-info';
+            type.innerHTML = `<strong>Type:</strong> ${app.Type || 'App'}`;
+            
+            // Emulator platforms info (if applicable)
+            if (app['Emulator Platforms'] && app['Emulator Platforms'] !== 'None') {
+                const emulatorPlatforms = document.createElement('div');
+                emulatorPlatforms.className = 'app-info';
+                emulatorPlatforms.innerHTML = `<strong>Emulates:</strong> ${app['Emulator Platforms']}`;
+                content.appendChild(name);
+                content.appendChild(genre);
+                content.appendChild(platform);
+                content.appendChild(type);
+                content.appendChild(emulatorPlatforms);
+            } else {
+                content.appendChild(name);
+                content.appendChild(genre);
+                content.appendChild(platform);
+                content.appendChild(type);
+            }
+            
+            // Link to repository
+            const linkDiv = document.createElement('div');
+            linkDiv.className = 'app-link';
+            const link = document.createElement('a');
+            link.href = app.Url;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+            link.textContent = 'View Repository';
+            linkDiv.appendChild(link);
+            
+            content.appendChild(linkDiv);
+            
+            // Assemble the card
+            card.appendChild(imageDiv);
+            card.appendChild(content);
+            
+            return card;
+        }
+
+        /**
+         * Filter apps based on search input
+         * Performs case-insensitive search on app names
+         * @param {string} searchTerm - The search query
+         */
+        function filterApps(searchTerm) {
+            // Convert search term to lowercase for case-insensitive comparison
+            const term = searchTerm.toLowerCase().trim();
+            
+            if (term === '') {
+                // If search is empty, show all apps
+                filteredApps = [...appsData];
+            } else {
+                // Filter apps whose names contain the search term
+                filteredApps = appsData.filter(app => 
+                    app.Name.toLowerCase().includes(term)
+                );
+            }
+            
+            // Re-render the apps with the filtered results
+            renderApps();
+            updateAppCount();
+        }
+
+        /**
+         * Update the app count display
+         */
+        function updateAppCount() {
+            const countDiv = document.getElementById('appCount');
+            const total = appsData.length;
+            const showing = filteredApps.length;
+            
+            if (showing === total) {
+                countDiv.textContent = `Showing all ${total} apps`;
+            } else {
+                countDiv.textContent = `Showing ${showing} of ${total} apps`;
+            }
+        }
+
+        /**
+         * Display error message
+         * @param {string} message - The error message to display
+         */
+        function displayError(message) {
+            const container = document.getElementById('appsContainer');
+            container.innerHTML = `<div class="error">${message}</div>`;
+        }
+
+        /**
+         * Initialize the search functionality
+         * Attaches event listener to the search bar
+         */
+        function initializeSearch() {
+            const searchBar = document.getElementById('searchBar');
+            
+            // Listen for input events on the search bar
+            searchBar.addEventListener('input', (event) => {
+                filterApps(event.target.value);
+            });
+        }
+
+        /**
+         * Initialize the application
+         * This function is called when the DOM is fully loaded
+         */
+        function init() {
+            // Set up search functionality
+            initializeSearch();
+            
+            // Fetch and display apps data
+            fetchAppsData();
+        }
+
+        // Wait for the DOM to be fully loaded before initializing
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            // DOM is already loaded
+            init();
+        }
+
+        /**
+         * AUTOMATIC REFRESH MECHANISM
+         * 
+         * The data from Default.json is fetched dynamically each time the page loads.
+         * This means any updates to Default.json will automatically reflect when:
+         * 1. The page is refreshed (F5 or Ctrl+R)
+         * 2. The page is reopened in a browser
+         * 3. The user navigates back to this page
+         * 
+         * For automatic polling (checking for updates periodically without page refresh),
+         * you could uncomment the following code:
+         * 
+         * setInterval(() => {
+         *     fetchAppsData();
+         * }, 60000); // Refresh every 60 seconds
+         * 
+         * However, for static hosting, a page refresh is the recommended approach.
+         */
+    </script>
+</body>
+</html>
