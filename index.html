@@ -240,12 +240,24 @@
         let allApps = [];
         let filteredApps = [];
 
+        // Convert GitHub blob URLs to raw URLs for image display
+        function convertToRawImageUrl(url) {
+            if (!url || url.trim() === '') return '';
+            
+            // Convert GitHub blob URLs to raw.githubusercontent.com URLs
+            if (url.includes('github.com') && url.includes('/blob/')) {
+                return url.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+            }
+            
+            return url;
+        }
+
         // Load JSON data
         async function loadApps() {
             try {
-                const response = await fetch('data.json');
+                const response = await fetch('Default.json');
                 if (!response.ok) {
-                    throw new Error('Failed to load data.json');
+                    throw new Error('Failed to load Default.json');
                 }
                 allApps = await response.json();
                 filteredApps = [...allApps];
@@ -254,7 +266,7 @@
             } catch (error) {
                 console.error('Error loading apps:', error);
                 document.getElementById('appsContainer').innerHTML = 
-                    '<div class="no-results">Error loading apps. Please make sure data.json exists.</div>';
+                    '<div class="no-results">Error loading apps. Please make sure Default.json exists.</div>';
             }
         }
 
@@ -300,15 +312,16 @@
 
         // Create individual app card
         function createAppCard(app) {
-            const imageContent = app.Image && app.Image.trim() !== '' 
-                ? `<img src="${app.Image}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">`
+            const imageUrl = convertToRawImageUrl(app.Image);
+            const imageContent = imageUrl
+                ? `<img src="${imageUrl}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">`
                 : app.Name.charAt(0);
 
             return `
                 <div class="app-card">
                     <div class="app-image">
-                        ${app.Image && app.Image.trim() !== '' 
-                            ? `<img src="${app.Image}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">` 
+                        ${imageUrl
+                            ? `<img src="${imageUrl}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">` 
                             : app.Name.charAt(0)
                         }
                     </div>
