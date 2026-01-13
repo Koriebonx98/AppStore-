@@ -240,13 +240,24 @@
         let allApps = [];
         let filteredApps = [];
 
-        // Convert GitHub blob URLs to raw URLs for image display
-        function convertToRawImageUrl(url) {
-            if (!url || url.trim() === '') return '';
+        // Convert GitHub blob URLs to proper image URLs
+        function convertGitHubBlobToRaw(url) {
+            if (!url || typeof url !== 'string') {
+                return url;
+            }
             
-            // Convert GitHub blob URLs to raw.githubusercontent.com URLs
-            if (url.includes('github.com') && url.includes('/blob/')) {
-                return url.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+            // Check if it's a GitHub blob URL for this repository (AppStore-)
+            const appStoreRepoMatch = url.match(/^https:\/\/github\.com\/Koriebonx98\/AppStore-\/blob\/main\/(.+)$/);
+            if (appStoreRepoMatch) {
+                // Use relative path for images in this repository (works on GitHub Pages)
+                return appStoreRepoMatch[1]; // Returns just "Images/AppName/Cover.png"
+            }
+            
+            // For other GitHub repos, convert blob URL to raw URL
+            if (/^https:\/\/github\.com\/[^\/]+\/[^\/]+\/blob\//.test(url)) {
+                // Convert https://github.com/user/repo/blob/branch/path to https://raw.githubusercontent.com/user/repo/branch/path
+                return url.replace('https://github.com/', 'https://raw.githubusercontent.com/')
+                          .replace('/blob/', '/');
             }
             
             return url;
