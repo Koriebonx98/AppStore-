@@ -323,16 +323,18 @@
 
         // Create individual app card
         function createAppCard(app) {
-            // Convert GitHub blob URLs to raw URLs
-            const imageUrl = convertGitHubBlobToRaw(app.Image);
-            const imageContent = app.Image && app.Image.trim() !== '' 
+            const imageUrl = convertToRawImageUrl(app.Image);
+            const imageContent = imageUrl
                 ? `<img src="${imageUrl}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">`
                 : app.Name.charAt(0);
 
             return `
                 <div class="app-card">
                     <div class="app-image">
-                        ${imageContent}
+                        ${imageUrl
+                            ? `<img src="${imageUrl}" alt="${app.Name}" onerror="this.parentElement.innerHTML='${app.Name.charAt(0)}'">` 
+                            : app.Name.charAt(0)
+                        }
                     </div>
                     <div class="app-name">${app.Name}</div>
                     <div class="app-details">
